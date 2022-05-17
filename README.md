@@ -3,7 +3,7 @@
 
 **Design** 
 
-The goal of this project was to implement a classification model to predict whether someone is likely to have heart disease or a heart attack based on other health and lifestyle characteristics. This would allow for early detection and early intervention for individuals deemed likely to experience heart disease or attack. After engineering relevant categorical features and testing several baseline models, I tuned an XGBoost model and tested its performance on a holdout segment of the dataset. This modeling exercise also provides insight into feature importance in predicting heart disease or attack, which could be leveraged to design effective screening approaches for patients and to prioritize what information is most essential to gather to determine someone's risk of heart disease or attack. 
+The goal of this project was to implement a classification model to predict whether someone is likely to have heart disease or a heart attack based on other health and lifestyle characteristics. This would allow for early detection and early intervention for individuals deemed likely to experience heart disease or attack. After engineering relevant categorical features and testing several baseline models, I tuned an extreme gradient boosting model and tested its performance on a holdout segment of the dataset. This modeling exercise also provides insight into feature importance in predicting heart disease or attack, which could be leveraged to design effective screening approaches for patients and to prioritize what information is most essential to gather to determine someone's risk of heart disease or attack. 
 
 **Data**
 
@@ -20,7 +20,7 @@ The data was obtained from [Kaggle](https://www.kaggle.com/datasets/alexteboul/h
 
 *Model*
 
-A logistic regression, random forest, k-nearest neighbor, and an extreme gradient boosting model were tested and compared before tuning and finalizing an xgboost model for this classification problem. The entire dataset was split into 80/20 training vs holdout sets. Negative log loss scores were determined for various iterations of the model using 5-fold cross validation with the training dataset and those scores were used to guide the tuning process. A class weighted implementation of XGBoost was used to account for the imbalanced dataset. This was implemented using the scale_pos_weight parameter with the value used being the inverse of the class distribution.
+A logistic regression, random forest, k-nearest neighbor, and an extreme gradient boosting model were tested and compared before tuning and finalizing an XGBoost model for this classification problem. The entire dataset was split into 80/20 training vs holdout sets. Negative log loss scores were determined for various iterations of the model using 5-fold cross validation with the training dataset and those scores were used to guide the tuning process. A class weighted implementation of XGBoost was used to account for the imbalanced dataset. This was performed using the scale_pos_weight parameter with the value used being the inverse of the class distribution.
 
 **Tools**
 - Numpy and Pandas for data manipulation
