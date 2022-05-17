@@ -24,7 +24,7 @@ A logistic regression, random forest, k-nearest neighbor, and an extreme gradien
 
 **Tools**
 - Numpy and Pandas for data manipulation
-- Scikitlearn and XGBoost for modeling
+- Scikit-Learn and XGBoost for modeling
 - Matplotlib and Seaborn for visualizing
 
 **Communication**
