@@ -1,4 +1,4 @@
-# Early Detection of Heart Disease
+# Heart Disease Detection
 ## Metis Classification Project
 
 **Design** 
