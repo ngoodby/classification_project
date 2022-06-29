@@ -28,4 +28,4 @@ A logistic regression, random forest, k-nearest neighbor, and an extreme gradien
 - Matplotlib and Seaborn for visualizing
 
 **Communication**
-- Presentation slides summarizing the project and findings can be found here.
+- Presentation slides summarizing the project and findings can be found [here](https://github.com/ngoodby/classification_project/blob/master/classification_slides.pdf).
